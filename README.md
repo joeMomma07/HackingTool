@@ -1,7 +1,8 @@
 # TriVirus File Transfer Protocol
-### [insert description here]
+### Brief Description
+This tool utilizes the programming language Python to execute Trivial File Transfer Protocol (TFTP) to upload an infected .exe file into a victim's machine within the same local network. There are three files to make the tool work, namely (1) GUIDriver.py; (2) TFTP121_Client.py; and (3) TFTP121_Packet.py. The GUIDriver.py stores all the commands needed for the graphical user interface. Meanwhile, the TFTP121_Client.py has the code for the upload function of the protocol. Lastly, the TFTP121_Packet.py stores the functions for constructing TFTP packets and the class that provides the logging mechanism.
 
-### How to use the tool
+### How to use the Tool
 1. The victim and the attacker device should have a working TFTP server. For the victim, they must utilize tftpd64 which can be downloaded here https://tftpd64.software.informer.com/download/. Meanwhile, the attacker who is using Kali LInux can use tftp-hpa, which can be installed via the terminal.
 
 2. The attacker must have information about the victim’s IP address.This can be identified through the scanning tool, nmap and using zenmap to inspect the open ports and its corresponding services.
